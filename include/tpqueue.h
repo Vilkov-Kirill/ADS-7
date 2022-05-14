@@ -21,14 +21,6 @@ public:
     void push(T var);
     T pop();
     int length() { return count; }
-    void print() {
-        Item* curr = top;
-        while (curr != nullptr) {
-            std::cout << curr->value.prior << " " << curr->value.ch << " & ";
-            curr = curr->next;
-        }
-        std::cout << "\n";
-    }
 };
 
 template<typename T>
