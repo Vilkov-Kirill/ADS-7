@@ -10,14 +10,14 @@ struct SYM {
 
 template<typename T>
 class TPQueue {
-private:
+ private:
     struct Item {
         T value;
         Item* next = nullptr;
     };
     Item* top = new Item;
     int count = 0;
-public:
+ public:
     void push(T var);
     T pop();
     int length() { return count; }
